@@ -32,9 +32,7 @@ public class Main {
 //
 
 //        System.out.print("Intrudu un int: ");
-        int x = scanez.nextInt();
 //        System.out.print("Intrudu un String: ");
-        String y = scanez.next();
 //        System.out.print("Intrudu un float: ");
 //        int z = scanez.nextInt();
 //
@@ -46,11 +44,16 @@ public class Main {
 
 
         Dog rex = new Dog();
-        rex.nume = "Rex";
-        rex.culoare = "Rosu";
+        System.out.print("Introdu numele catelului: ");
+        rex.nume = scanez.next();
+        System.out.print("Introdu culoarea catelului: ");
+        rex.culoare = scanez.next();
         rex.greutate = 3.4f;
         rex.rasa = "Bichon";
         rex.varsta = 3;
+
+        System.out.println("Numele este: " + rex.nume);
+        System.out.println(rex.culoare);
 
         Dog dingo = new Dog();
         dingo.nume = "Dingo";
@@ -60,24 +63,15 @@ public class Main {
         dingo.alearga();
         Dog gigi = new Dog();
 
-        System.out.println(rex.culoare);
-
-
-
-
-
-
-
-
 
     }
 
-    public static int adunare(int primulNumar, int alDoileaNumar){
-        int resultat = primulNumar+alDoileaNumar;
+    public static int adunare(int primulNumar, int alDoileaNumar) {
+        int resultat = primulNumar + alDoileaNumar;
         return resultat;
     }
 
-    public static String afisareHelloNume(){
+    public static String afisareHelloNume() {
         return "Hello \n Cosmin";
     }
 
